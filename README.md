@@ -18,7 +18,7 @@ An Expo mobile starter for a **test-only** token-rewards product. Supabase is th
 1. Create a Supabase project, then copy `.env.example` to `.env` and set its two public values. Never place a service-role key in the app.
 2. In Supabase SQL Editor, run `supabase/migrations/0001_rewards_schema.sql`.
 3. Enable Email sign-in in Supabase Auth and add `tokenrewards://` as a redirect URL.
-4. Install packages with `npm install`, then run `npm start`.
+4. Install packages with `npm install`, then run `npm start`. This project targets Expo SDK 57, which matches current Expo Go.
 
 ## Test admin (1,000,000 tokens)
 
