@@ -10,13 +10,14 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "2.1.2",
+    "@react-native-async-storage/async-storage": "2.2.0",
     "@supabase/supabase-js": "2.50.0",
-    "expo": "53.0.0",
-    "expo-router": "5.1.11",
-    "expo-status-bar": "2.2.3",
-    "react": "19.0.0",
-    "react-native": "0.79.0",
+    "expo": "^57.0.0",
+    "expo-linking": "~57.0.9",
+    "expo-router": "~57.0.19",
+    "expo-status-bar": "~57.0.1",
+    "react": "19.2.3",
+    "react-native": "0.86.0",
     "react-native-url-polyfill": "2.0.0"
   },
   "devDependencies": {
