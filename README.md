@@ -9,7 +9,8 @@ An Expo mobile starter for a **test-only** token-rewards product. Supabase is th
 - 1,000-token cash-out floor and a displayed test conversion of 1,000 = $100 USD
 - transfers through a transactional database RPC
 - one-time 40% inactivity burn on the first login after 21+ days away
-- task, referral, milestone-ready ledger types
+- task claims and referral claims held for verification, plus server-recorded streak milestones
+- approved referral reward: 5 tokens to the referrer and 1 token to the new user
 - immutable, user-visible ledger with direct client writes blocked
 
 ## Set up
