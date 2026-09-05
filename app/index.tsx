@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Alert, ActivityIndicator, Pressable, SafeAreaView, StyleSheet, Text, TextInput, View } from 'react-native';
+import * as Linking from 'expo-linking';
 import { supabase } from '@/lib/supabase';
 
 type Wallet = { balance: number; streak_count: number; last_claim_at: string | null; handle: string };
@@ -26,7 +27,7 @@ export default function Home() {
     if (error) Alert.alert('Not completed', error.message); else { Alert.alert('Done'); refresh(); }
   };
   const signIn = async () => {
-    const { error } = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: 'tokenrewards://' } });
+    const { error } = await supabase.auth.signInWithOtp({ email, options: { emailRedirectTo: Linking.createURL('/') } });
     Alert.alert(error ? 'Sign-in failed' : 'Check your inbox', error?.message ?? 'Use the secure link we sent to continue.');
   };
 
